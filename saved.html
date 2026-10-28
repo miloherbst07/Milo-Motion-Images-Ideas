@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Saved ideas · Milo Motion Images</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..800&family=Newsreader:ital,opsz,wght@0,6..72,600..800;1,6..72,600..800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="saved">
+<header class="hero"><div class="wrap">
+  <div class="hud"><a class="back" href="index.html">← All ideas</a><span class="rec">Rec</span><span class="tc" id="tc">00:00:00:00</span></div>
+  <div class="hero-row">
+    <div>
+      <h1>The shot <em>list</em></h1>
+      <p class="lede">Everything you've saved. Pick a format along the top, then sort it by client, what it needs or goal. Mark each one posted as you go.</p>
+    </div>
+    <div class="row">
+      <button class="btn" id="copyList" type="button">Copy list for Claude</button>
+      <button class="btn" id="exportBtn" type="button">Back up</button>
+      <label class="btn" for="importFile">Restore</label><input id="importFile" type="file" accept="application/json,.json" hidden>
+    </div>
+  </div>
+  <div class="stats" id="stats"></div>
+</div></header>
+<nav class="tabs" id="tabsBar" aria-label="Formats"><div class="wrap" id="tabs" role="tablist"></div></nav>
+<main class="wrap">
+  <section class="tools" id="tools"></section>
+  <div id="list"></div>
+</main>
+<div class="toast" id="toast" hidden role="status"></div>
+<footer class="site"><div class="wrap"><span>Milo Motion Images · Idea Bank</span><span>Saves are kept in this browser</span></div></footer>
+<script src="ideas.js"></script>
+<script src="breakdowns.js"></script>
+<script src="app.js"></script>
+</body></html>
